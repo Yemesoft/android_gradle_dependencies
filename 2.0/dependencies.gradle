@@ -1,0 +1,33 @@
+dependencies {
+    api 'com.android.support:design:'+rootProject.ext.supportVersion
+    api 'com.android.support:appcompat-v7:'+rootProject.ext.supportVersion
+    api 'com.android.support:gridlayout-v7:'+rootProject.ext.supportVersion
+    api 'com.android.support.constraint:constraint-layout:'+rootProject.ext.constraintVersion
+
+    api 'org.greenrobot:eventbus:'+rootProject.ext.eventbusVersion
+
+    api 'com.jakewharton:butterknife:'+rootProject.ext.butterknifeVersion
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    api 'com.android.support:multidex:'+rootProject.ext.multidexVersion
+
+    api group: 'com.google.code.gson', name: 'gson', version: rootProject.ext.gsonVersion
+
+    api 'com.squareup.picasso:picasso:'+rootProject.ext.picassoVersion
+    api 'com.github.bumptech.glide:glide:'+rootProject.ext.glideVersion
+
+    api 'com.squareup.okhttp3:okhttp:'+rootProject.ext.okhttpVersion
+    api 'com.squareup.retrofit2:retrofit:'+rootProject.ext.retrofitVersion
+    api 'com.squareup.retrofit2:converter-scalars:'+rootProject.ext.retrofitVersion
+
+    api group: 'com.google.guava', name: 'guava', version: rootProject.ext.guavaVersion
+
+    api 'com.squareup.leakcanary:leakcanary-android:' + rootProject.ext.leakcanaryVersion
+//    api 'com.squareup.leakcanary:leakcanary-android-no-op:' + rootProject.ext.leakcanaryVersion
+    api 'com.squareup.leakcanary:leakcanary-support-fragment:' + rootProject.ext.leakcanaryVersion
+
+    api('com.github.JakeWharton:ViewPagerIndicator:'+rootProject.ext.viewPagerIndicatorVersion,{
+        exclude group: 'com.android.support', module: 'support-v4'
+    })
+    api 'com.github.devlight:infinitecycleviewpager:'+rootProject.ext.infiniteCycleViewPagerVersion
+}
